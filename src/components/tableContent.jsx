@@ -1,23 +1,24 @@
 import data from "../MOCK_DATA.json";
+import image from "../assets/avatar.png";
 export default function TableContent() {
   const classTwo = data.filter((d) => d.class === "Class Two");
   const classOne = data.filter((d) => d.class === "Class One");
 
   return (
-    <section className="py-24 text-white lg:pt-[120px] lg:pb-28">
-      <div className="container">
+    <section className="py-24 text-white pb-11 lg:pt-[120px] lg:pb-28">
+      <div className="container mx-auto ">
         <div className="mb-16 flex flex-col items-center">
           <h2 className="text-3xl lg:text-[40px] mb-9 font-bold ">
             <span className="text-[#00CC8C] ">Students</span> of the Year
           </h2>
           {/*Search Box */}
           <form>
-            <div className="flex">
-              <div>
+            <div className="">
+              <div className="relative overflow-hidden text-gray-50 md:min-w-[380px] lg:min-w-[440px]">
                 <input
                   type="search"
                   id="search-dropdown"
-                  className="z-20 block w- h-full bg-white px-4 py-2.5 pr-10 focus:outline-none rounded-[63px] placeholder:text-neutral-400 text-neutral-800 "
+                  className="z-20 block w-full bg-white px-4 py-2.5 pr-10 focus:outline-none rounded-[63px] placeholder:text-neutral-400 text-neutral-800 "
                   placeholder="Search by Student"
                   required
                 />
@@ -74,14 +75,17 @@ export default function TableContent() {
                 return (
                   <tr key={d.id} className="border-b border-[#7ECEB529] ">
                     <td className="p-5  text-sm md:text-xl ">{d.id}</td>
-                    <td className="p-5 w-8 h-8  text-sm md:text-xl ">
-                      {<img src={d.sr} width="30px" height="40px" />}
+                    <td className="p-5 flex  text-sm md:text-xl ">
+                      <div className="pt-1">
+                        {<img src={image} width="40px" height="40px" />}
+                      </div>
+                      <div className="pl-2 pt-2">{d.name}</div>
                     </td>
-                    <td className="p-5 pl-20 text-sm md:text-xl">{d.name}</td>
-                    <td className="p-5 pl-20 text-sm md:text-xl text-center">
+
+                    <td className="p-5  text-sm md:text-xl text-center">
                       {d.score}
                     </td>
-                    <td className="p-5 pl-20 text-sm md:text-xl text-center">
+                    <td className="p-5  text-sm md:text-xl text-center">
                       {d.percentage}
                     </td>
                   </tr>
@@ -97,14 +101,15 @@ export default function TableContent() {
                 return (
                   <tr key={d.id} className="border-b border-[#7ECEB529] ">
                     <td className="p-5  text-sm md:text-xl ">{d.id}</td>
-                    <td className="p-5  text-sm md:text-xl ">
-                      {<img src={d.sr} />}
+                    <td className="p-5 flex text-sm md:text-xl ">
+                      <div className="pt-1">{<img src={image} />}</div>
+                      <div className="pl-2 pt-2">{d.name}</div>
                     </td>
-                    <td className="p-5 pl-20 text-sm md:text-xl">{d.name}</td>
-                    <td className="p-5 pl-20 text-sm md:text-xl text-center">
+
+                    <td className="p-5  text-sm md:text-xl text-center">
                       {d.score}
                     </td>
-                    <td className="p-5 pl-20 text-sm md:text-xl text-center">
+                    <td className="p-5  text-sm md:text-xl text-center">
                       {d.percentage}
                     </td>
                   </tr>

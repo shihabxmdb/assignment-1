@@ -1,73 +1,67 @@
 [
   {
     "id": 1,
-    "sr": "./assets/refund.PNG",
+
+    "name": "Shihab Hasan",
+    "score": "A+",
+    "percentage": 97,
+    "class": "Class Two"
+  },
+  {
+    "id": 1,
+    "sr": "./assets/avatar.png",
+
+    "name": "Tashrif Hasan",
+    "score": "A+",
+    "percentage": 97,
+    "class": "Class One"
+  },
+  {
+    "id": 2,
+
+    "name": "Abdul Karim",
+    "score": "A+",
+    "percentage": 97,
+    "class": "Class One"
+  },
+  {
+    "id": 2,
+
     "name": "Shihab Hasab",
     "score": "A+",
     "percentage": 97,
     "class": "Class Two"
   },
   {
-    "id": 2,
-    "sr": "./assets/avatar.png",
+    "id": 3,
 
-    "name": "Shihab Hasab",
-    "score": "A+",
-    "percentage": 97,
+    "name": "Rofiq",
+    "score": "A",
+    "percentage": 77,
     "class": "Class One"
   },
   {
     "id": 3,
-    "sr": "./assets/avatar.png",
 
-    "name": "Shihab Hasab",
+    "name": "Mushfiqa Farzana",
+    "score": "A+",
+    "percentage": 97,
+    "class": "Class Two"
+  },
+  {
+    "id": 4,
+
+    "name": "Riajul Islam",
     "score": "A+",
     "percentage": 97,
     "class": "Class One"
   },
   {
     "id": 4,
-    "sr": "./assets/avatar.png",
 
-    "name": "Shihab Hasab",
-    "score": "A+",
-    "percentage": 97,
-    "class": "Class One"
-  },
-  {
-    "id": 5,
-    "src": "./assets/avatar.png",
-
-    "name": "Shihab Hasab",
-    "score": "A+",
-    "percentage": 97,
-    "class": "Class One"
-  },
-  {
-    "id": 6,
-    "src": "./assets/avatar.png",
-
-    "name": "Shihab Hasab",
-    "score": "A+",
-    "percentage": 97,
-    "class": "Class One"
-  },
-  {
-    "id": 7,
-    "src": "./assets/avatar.png",
-
-    "name": "Shihab Hasab",
-    "score": "A+",
-    "percentage": 97,
-    "class": "Class One"
-  },
-  {
-    "id": 8,
-    "src": "./assets/avatar.png",
-
-    "name": "Shihab Hasab",
-    "score": "A+",
-    "percentage": 97,
-    "class": "Class One"
+    "name": "Rakibul Islam",
+    "score": "A",
+    "percentage": 75,
+    "class": "Class Two"
   }
 ]
