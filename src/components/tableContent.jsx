@@ -1,8 +1,12 @@
 import data from "../MOCK_DATA.json";
 export default function TableContent() {
-  const classTwo = data.filter((d) => d.class === "Class Two");
-  const classOne = data.filter((d) => d.class === "Class One");
+  const result = data.reduce((acc, currentValue) => {
+    acc[currentValue.class] = acc[currentValue.class] || [];
+    acc[currentValue.class].push(currentValue);
 
+    return acc;
+  }, {});
+  //console.log(result);
   return (
     <section className="py-24 text-white pb-11 lg:pt-[120px] lg:pb-28">
       <div className="container mx-auto ">
@@ -70,7 +74,7 @@ export default function TableContent() {
                 </td>
               </tr>
 
-              {classOne.map((d) => {
+              {result["Class One"].map((d) => {
                 return (
                   <tr key={d.id} className="border-b border-[#7ECEB529] ">
                     <td className="p-5  text-sm md:text-xl ">{d.id}</td>
@@ -96,7 +100,7 @@ export default function TableContent() {
                   Class Two
                 </td>
               </tr>
-              {classTwo.map((d) => {
+              {result["Class Two"].map((d) => {
                 return (
                   <tr key={d.id} className="border-b border-[#7ECEB529] ">
                     <td className="p-5  text-sm md:text-xl ">{d.id}</td>
