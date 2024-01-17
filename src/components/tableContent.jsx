@@ -1,5 +1,4 @@
 import data from "../MOCK_DATA.json";
-import image from "../assets/avatar.png";
 export default function TableContent() {
   const classTwo = data.filter((d) => d.class === "Class Two");
   const classOne = data.filter((d) => d.class === "Class One");
@@ -77,7 +76,7 @@ export default function TableContent() {
                     <td className="p-5  text-sm md:text-xl ">{d.id}</td>
                     <td className="p-5 flex  text-sm md:text-xl ">
                       <div className="pt-1">
-                        {<img src={image} width="40px" height="40px" />}
+                        {<img src={d.avater} width="40px" height="40px" />}
                       </div>
                       <div className="pl-2 pt-2">{d.name}</div>
                     </td>
@@ -102,7 +101,9 @@ export default function TableContent() {
                   <tr key={d.id} className="border-b border-[#7ECEB529] ">
                     <td className="p-5  text-sm md:text-xl ">{d.id}</td>
                     <td className="p-5 flex text-sm md:text-xl ">
-                      <div className="pt-1">{<img src={image} />}</div>
+                      <div className="pt-1">
+                        {<img src={d.avater} width="40px" height="40px" />}
+                      </div>
                       <div className="pl-2 pt-2">{d.name}</div>
                     </td>
 
